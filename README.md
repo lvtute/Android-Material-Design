@@ -60,5 +60,6 @@ ___
   * __sp__: Scale Independent Pixel, scaled based on user’s font size preference. Fonts should use sp.
 
 ## 2. **Basic Course app**
+  * __Picasso__: use [Picasso library](https://square.github.io/picasso)  to easily put in online pictures to image view. 
 
 

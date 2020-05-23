@@ -1,51 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:padding="15dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="131dp"
-        android:layout_marginEnd="190dp" />
+        />
 
     <ImageView
         android:id="@+id/course_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="-2dp"
-        android:layout_marginEnd="2dp"
-        android:adjustViewBounds="true"
-        android:cropToPadding="true"
+        android:layout_height="200dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/smiling_girl" />
+        app:srcCompat="@drawable/smiling_girl"
+        android:layout_below="@+id/card_view"/>
 
     <TextView
         android:id="@+id/course_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/course_image"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="243dp"
         android:text="@string/app_name"
-        android:textColor="#EADDDD"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-    <ImageView
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/author_image"
-        android:layout_width="56dp"
-        android:layout_height="49dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="223dp"
-        android:layout_marginEnd="2dp"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        app:civ_border_width="2dp"
+        android:layout_alignBottom="@+id/course_image"
+        android:layout_alignParentRight="true"
+        app:civ_border_color="#FF000000"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/author_image"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_alignBottom="@+id/course_image"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginEnd="2dp"-->
+<!--        app:srcCompat="@android:drawable/sym_def_app_icon" />-->
 </RelativeLayout>

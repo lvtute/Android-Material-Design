@@ -1,8 +1,10 @@
-package com.lvtute.basiccourseapp;
+package com.lvtute.basiccourseapp.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.lvtute.basiccourseapp.R;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
